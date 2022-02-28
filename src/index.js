@@ -1,6 +1,8 @@
 import {render} from 'react-dom'
 import React from 'react'
-import App from './app';
-// import 'antd/dist/antd.css';
+
+const App = () => {
+    return <div>Hello React11111</div>
+}
 
 render(<App />, document.getElementById('root'))

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test webpack --mode production",
-    "build": "cross-env NODE_ENV=prod webpack --mode production",
-    "dev": "wcross-env NODE_ENV=dev webpack --mode development",
-    "start": "cross-env NODE_ENV=dev webpack serve --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development",
     "watch": "webpack --config webpack.config.js --watch"
   },
   "keywords": [],
