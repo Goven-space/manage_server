@@ -1,3 +1,3 @@
 module.exports = {
-    pulgins: ["postcss-preset-env"],
-  };
+  pulgins: ['postcss-preset-env'],
+};

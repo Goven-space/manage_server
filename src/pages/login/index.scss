@@ -1,0 +1,36 @@
+body{
+    height:100%;
+}
+.login-wrapper{
+    height:100%;
+    background-image: url('@assets/background.jpg');
+    .login-container{
+        display: grid;
+        grid-template-columns: 400px 400px ;
+        width:800px;
+        height:350px;
+        .login-title{
+            height:100%;
+            line-height:350px;
+            text-align:center;
+            background: rgba(145, 179, 179, 0.5);
+            font-size:35px;
+            font-family:"微软雅黑","Dosis",sans-serif;
+            font-weight:bold;
+            text-transform:uppercase;
+
+        }
+        .login-content{
+            padding-top:5%;
+            height:100%;
+            background:white;
+            .login-form{
+                width:100%;
+                .login-form-button{
+                    width:80%;
+                    border-radius:8px;
+                }
+            }
+        }
+    }
+}
