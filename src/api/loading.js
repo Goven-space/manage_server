@@ -13,7 +13,7 @@ const loading = (flag) => {
       render(<LoadingAnimated />,wrapper);
     }
   }else{
-    if(wrapper !== null) div.parentNode.removeChild(wrapper);
+    if(wrapper !== null) wrapper.parentNode.removeChild(wrapper);
   }
 };
 

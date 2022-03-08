@@ -9,5 +9,4 @@ module.exports = {
     ],
     '@babel/preset-react',
   ],
-  // plugins: ["react-refresh/babel"],
 };

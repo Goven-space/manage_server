@@ -36,6 +36,8 @@ export const post = (url,params,config) => {
       resolve(res);
     }).catch((err) => {
       reject(err);
+    }).finally(()=>{
+      loading(false);
     });
   });
 };

@@ -4,6 +4,8 @@ body{
 .login-wrapper{
     height:100%;
     background-image: url('@assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     .login-container{
         display: grid;
         grid-template-columns: 400px 400px ;

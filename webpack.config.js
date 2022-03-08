@@ -12,11 +12,12 @@ console.log('process.env.NODE_ENV=', process.env.NODE_ENV);
 const config = {
   mode: isDevelopment ? 'development' : 'production',
   target: target,
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[hash][ext][query]',
     filename: '[name].bundle.js',
+    publicPath: '/',
     clean: true, //每次打包前清空目录 旧版用CleanWebpackPlugin插件
   },
   module: {
@@ -74,6 +75,7 @@ const config = {
     open: true, //运行后自动打开
     hot: true,
     compress: true, //启动gzip压缩
+    historyApiFallback: true,//路由设置 true为history模式
     client: {
       progress: true, //浏览器打印进度
     },
@@ -86,7 +88,9 @@ const config = {
       '@pages': path.join(__dirname, './src/pages'),
       '@assets':path.join(__dirname,'./assets'),
       '@icon' : path.join(__dirname,'./src/icon'),
-      '@components' : path.join(__dirname,'./src/components')
+      '@layout' : path.join(__dirname,'./src/layout'),
+      '@store': path.join(__dirname, './src/store'),
+      '@routes' : path.join(__dirname,'./src/routes')
     },
   },
   // performance: {
